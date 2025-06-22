@@ -1,0 +1,38 @@
+.word-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.word-card:hover {
+    transform: scale(1.03);
+}
+
+.transcription {
+    color: #888;
+    font-style: italic;
+}
+
+.translation {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.word-card button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #90caf9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.word-card button:hover {
+    background-color: #64b5f6;
+}

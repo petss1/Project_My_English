@@ -1,19 +1,21 @@
-// const Card = (props) => {
-//     const cardClasses = `tariffCard ${props.colorClass} ${props.highlighted ? 'highlighted' : ''}`;
+import './Cards.css';
+import WordCard from "./WordCard";
 
-//     return (
-//         <div className={cardClasses}>
-//             <div className="tariffСard__body">
-//                 <h4 className="tariffСard__title">{props.title}</h4>
-//                 <p className="tariffСard__text">{props.description}</p>
-//             </div>
-//             <div className="tariffСard__footer">
-//                 <span className="tariffСard__price">{props.price} руб/мес</span>
-//                 <button className="tariffСard__on">Подключить</button>
-//             </div>
-//         </div>
-//     );
-// }
+function Cards () {
+    const testWord = {
+        english:"apple",
+        russian: "яблоко",
+        transcription:"'epl",
+        theme:"food"
+    };
 
-// export default Card;
-// образец
+    return(
+        <div>
+            <p>карточки тест</p>
+            <WordCard word={testWord} />
+        </div>
+    );
+}
+
+export default Cards;
+

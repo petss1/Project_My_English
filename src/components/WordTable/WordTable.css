@@ -1,0 +1,89 @@
+.word-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.word-form input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.word-form button {
+    background-color: #dc9286;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.word-form button:hover {
+    background-color: #dc5d2f;
+}
+
+.reset-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.table-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+td button {
+    margin-right: 5px;
+    padding: 4px 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dc9286;
+    transition: background-color 0.2s ease;
+}
+
+td button:hover {
+    background-color: #dc9286;
+}
+
+.reset-btn {
+    background-color: #8baecb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.reset-btn:hover {
+    background-color: #cd8e8d;
+}
