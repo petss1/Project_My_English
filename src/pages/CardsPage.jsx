@@ -5,6 +5,7 @@ import "./CardsPage.css";
 function CardsPage () {
     const [words, setWords] = useState([]);
     const [index, setIndex] = useState(0);
+    const [studiedCount, setStudiedCount] = useState(0);
 
     useEffect(() => {
         const saved = localStorage.getItem("myWords");
@@ -33,8 +34,10 @@ function CardsPage () {
 
     return (
         <div className="cards-page">
+            <p className="studied-info">Вы изучили: {studiedCount} слов</p>
             <button onClick={showPrev}>⬅</button>
-            <WordCard word={words[index]} />
+            <WordCard word={words[index]} 
+            onReveal={()=> setStudiedCount((prev)=>prev+1)}/>
             <button onClick={showNext}>➡</button>
         </div>
     );
